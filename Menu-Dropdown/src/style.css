@@ -1,0 +1,23 @@
+:root{
+    --bg-color: #222925;
+    --hover-color: #76b491;
+    --primary-color: #e7f1ec;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dp-menu ul{
+    list-style-type: none ;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+.dp-menu ul li {
+    display: inline-block;
+}
+
+.dp-menu ul li a {
+    color: var(--primary-color);
+}
