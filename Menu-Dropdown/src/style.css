@@ -15,9 +15,36 @@
 }
 
 .dp-menu ul li {
-    display: inline-block;
+    display: inline;
+    position: relative;
 }
 
 .dp-menu ul li a {
     color: var(--primary-color);
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    transition: background .4s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--hover-color);
+}
+
+/*Submenu*/
+.dp-menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 150px;
+    opacity: 0;
+}
+
+.dp-menu ul li:hover ul{
+    display: block;
+    opacity: 1;
+}
+
+.dp-menu ul ul li a{
+    display: block;
 }
